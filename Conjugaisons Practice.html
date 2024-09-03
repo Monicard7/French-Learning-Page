@@ -1,0 +1,55 @@
+<html>
+
+<head>
+    <title>French Conjugaisons Practices</title>
+    <script src="presentJSON.js"></script>
+    <script src="Functions.js"></script>
+    <style href="formatting.css">
+        body {
+            color: Black;
+            margin: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            padding-top: 50px;
+            padding-bottom: 20px;
+        }
+
+        .main {
+            padding-left: 35%;
+            text-align: left;
+        }
+
+        .results {
+            text-align: center;
+        }
+        .child {
+            display: inline-block; 
+            vertical-align:text-top;
+            width: 350px;
+            text-align: left;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>French Conjugaisons Practices</h1>
+
+    <div id="questions" class="main">
+        <p id="question">Question: </p>
+        <label for="input">Answer: </label>
+        <input type="text" id="input" placeholder="Input your answer here..." autocomplete="false"/>
+        <button id="btnNew">New question</button>
+        <button id="btnCheck">Check answer</button>
+    </div> <br />
+
+    <div id="answers" class="results">
+        <p class="main">Results: </p>
+        <ol id="corr" reversed class="child"></ol>
+        <ol id="incorr" reversed class="child"></ol> 
+    </div>
+</body>
+
+</html>
